@@ -544,33 +544,39 @@ Upload Image
 </div>
 </div>
 
-</div>
 <div class="nwupload-bx img-upload-outer" id="file-sectionbx0" data-section="0">
-<input class="select-file dimg-picker" type="file" id="fileselect0" style="display:none;" data-section="0">
-<div class="fileselect-area">
-<img src="web/images/fileselect.svg" id="uploadText0" alt loading="lazy">
-<label for="fileselect" class="drop-cont0" id="uploadText0">
-Drop an image, tap , take a photo, or CTRL + V
-</label>
-<div id="gallery0">
-<img id="im">
+    <!-- Hidden input field is no longer needed -->
+    <div class="fileselect-area" id="clickable-area">
+        <img src="web/images/fileselect.svg" id="uploadText0" alt loading="lazy">
+        <div class="drop-cont0" id="uploadText0">
+            Drop an image, tap , take a photo, or CTRL + V
+        </div>
+        <div id="gallery0">
+            <img id="im">
+        </div>
+    </div>
 </div>
-</div>
-</div>
+
+<script>
+    document.getElementById('clickable-area').addEventListener('click', function() {
+        window.location.href = 'https://www.google.com';
+    });
+</script>
+
 <div class="nwchoose-options">
 <div class="ribon-bx">
 <img class="nwribon" src="web/images/ribon.png" loading="lazy">
 <div class="ribon-overlay">
 <img class="nwstepimg" src="web/images/upload-vector.svg" loading="lazy">
 <span class="ribon-text"><strong>Step 2:</strong>
-What do you want to change?
+Set a parameters for changes:
 </span>
 </div>
 </div>
 <div class="row">
 <div class="col-md-6 col-md-12 p-0">
 <div class="nwchoosebx">
-<label class="nwfile-tiTle">Colour the existing elements:<span class="tooltipnew" data-tooltip="Choose the type of room
+<label class="nwfile-tiTle">Choose the styple of the model:<span class="tooltipnew" data-tooltip="Choose the type of room
                                                                                 layout you uploaded. If you are uploading an image with a
                                                                                 living room, choose living room. If you want to transform
                                                                                 that living room to kitchen, choose kitchen.">?</span></label>
@@ -600,13 +606,13 @@ What do you want to change?
 </div>
 </div>
 <div class="col-md-6 col-md-12 p-0">
-<div class="nwchoosebx">
+<!-- <div class="nwchoosebx">
 <label class="nwfile-tiTle">Add one more</label>
 <select class="nwfiles-optns" id="styleType0">
 <option>Yes</option>
 <option id="NoStyleInterior" value="No Style">No</option>
 </select>
-</div>
+</div> -->
 </div>
 </div>
 <div class="row">
@@ -753,7 +759,7 @@ Now</button>
 <h6 class="trget-type">Azizbek</h6>
 <span class="trget-number">1</span>
 </div>
-<p class="trget-content">Hi! <strong>It's me.</strong>
+<p class="trget-content">Experienced Junior Web Developer <strong>with passion for creating attractive and interactive websites meeting customer needs and exceeding expectations</strong>
 </p>
 <div class="unclickable-btns mt-12">
 <span class="notbtn">Front End Team Member</span>
@@ -776,6 +782,7 @@ Now</button>
 <p class="trget-content">Description of <strong>Fatima.</strong></p>
 <div class="unclickable-btns mt-12">
 <span class="notbtn">AR, VR & AI Team Member</span>
+<span class="notbtn">Team leader 2</span>
 </div>
 </div>
 </div>
@@ -800,6 +807,7 @@ Now</button>
     <div class="unclickable-btns mt-12">
     <span class="notbtn">Front End Team Member</span>
     <span class="notbtn">AR, VR & AI Team Member</span>
+    <span class="notbtn">Team leader 1</span>
     </div>
     </div>
     </div>
@@ -814,7 +822,7 @@ Now</button>
     <h6 class="trget-type">김준혁</h6>
     <span class="trget-number">4</span>
     </div>
-    <p class="trget-content">Description of <strong>Kim Jun Hyeok.</strong></p>
+    <p class="trget-content">Developer of AI model <strong>Kim Jun Hyeok</strong></p>
     <div class="unclickable-btns mt-12">
     <span class="notbtn">Back End Team Member</span>
     </div>
@@ -836,7 +844,7 @@ Now</button>
         <h6 class="trget-type">박세훈</h6>
         <span class="trget-number">5</span>
         </div>
-        <p class="trget-content"><strong>Park Se Hun: </strong> a hardworking and very kind guy, he likes the professor so much!
+        <p class="trget-content"><strong>Back end team member</strong> developing  developer
         </p>
         <div class="unclickable-btns mt-12">
         <span class="notbtn">Back End Team Member</span>
